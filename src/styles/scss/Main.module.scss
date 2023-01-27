@@ -1,0 +1,124 @@
+.Main {
+  height: 100vh;
+
+  // background-image: url("../../../public/assets/images/gradient-1.png");
+  // background-position: bottom;
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+
+  section {
+    padding: 40px 100px;
+    margin: 5em auto;
+
+    width: 766px;
+
+    color: #fff;
+
+    font-family: "Pixel-2";
+
+    article {
+      h1 {
+        font-size: 3.5em;
+        font-variant: small-caps;
+
+        color: #50e4ed;
+
+        margin-bottom: 10px;
+
+        text-shadow: 1px 3px 0px rgb(80 229 237 / 45%);
+      }
+
+      p {
+        font-size: 1.25em;
+
+        width: 590px;
+      }
+    }
+
+    a {
+      width: 100%;
+
+      text-decoration: none;
+
+      button {
+        font-family: "Pixel";
+        font-weight: 500;
+        font-size: 1.25em;
+
+        margin-top: 10px;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+
+        background-color: transparent;
+
+        border: 2px solid #FFF;
+
+        color: #fff;
+
+        padding: 0.4em 0;
+
+        text-shadow: 1px 2px 0px rgb(255 255 255 / 45%);
+
+        &:hover {
+          color: #50e4ed;
+
+          border: 2px solid #50e4ed;
+
+          text-shadow: 1px 2px 0px rgb(80 229 237 / 45%);
+
+          transition: 0.25s ease-in-out;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        svg {
+          width: 31px;
+          height: 22px;
+        }
+      }
+    }
+  }
+}
+
+/* media queries */
+
+@media (max-width: 785px) {
+  .Main {
+    section {
+      padding: 40px 50px;
+
+      width: 100%;
+
+      article {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Main {
+    section {
+      padding: 40px 50px;
+
+      width: 100%;
+
+      article {
+        h1 {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+}

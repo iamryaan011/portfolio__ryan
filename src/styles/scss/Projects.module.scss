@@ -1,0 +1,139 @@
+.Projects {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  height: 100vh;
+
+  h1 {
+    font-size: 3.5em;
+    font-variant: small-caps;
+
+    color: #50e4ed;
+
+    margin-bottom: 10px;
+
+    text-shadow: 1px 3px 0px rgb(80 229 237 / 45%);
+
+    text-align: center;
+
+    margin-bottom: 8px;
+  }
+
+  section {
+    display: grid;
+
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+
+    text-align: center;
+
+    article {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      background-color: #041b3e;
+
+      color: #fff;
+
+      margin: 0.5em;
+
+      height: 195px;
+      width: 310px;
+
+      border-radius: 15px;
+
+      &:hover {
+        color: #50e4ed;
+
+        cursor: default;
+
+        transition: 0.5s;
+
+        letter-spacing: 5px;
+      }
+
+      span {
+        font-size: 1.5em;
+        font-variant: small-caps;
+        font-weight: 600;
+
+        background-color: #011224;
+
+        width: 100%;
+
+        padding: 0.5em;
+      }
+    }
+  }
+
+  a {
+    font-family: "Pixel";
+    font-size: 1.25em;
+    font-variant: small-caps;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+
+    padding: 0.5em 2em;
+    margin-top: 8px;
+
+    background-color: transparent;
+
+    border: 2px solid transparent;
+
+    text-decoration: none;
+
+    text-shadow: 1px 3px 0px rgba(255, 255, 255, 0.45);
+
+    &:hover {
+      color: #50e4ed;
+
+      border-bottom: 2px solid #50e4ed;
+
+      text-shadow: 1px 3px 0px rgb(80 229 237 / 45%);
+
+      transition: 0.5s;
+
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .Projects {
+    section {
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
+      article {
+        width: 200px;
+        height: 130px;
+        
+        span {
+          font-size: 1.1em;
+
+          padding: 0.3em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .Projects {
+    h1 {
+      font-size: 2.8em;
+    }
+  }
+}

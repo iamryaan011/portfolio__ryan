@@ -1,0 +1,41 @@
+.Footer {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    padding: 2em;
+
+    background-color: #041B3E;
+
+    color: #FFF;
+
+    font-variant: small-caps;
+
+    section {
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+
+        article {
+            img {
+                margin: 0.5em;
+
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+
+                    cursor: pointer;
+
+                    transition: 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+.Contact {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-color: #041b3e;
+
+  article {
+    h1 {
+      font-size: 3.5em;
+      font-feature-settings: "smcp";
+      font-variant: small-caps;
+
+      color: #50e4ed;
+
+      margin-bottom: 10px;
+
+      text-shadow: 1px 3px 0px rgb(80 229 237 / 45%);
+      text-align: center;
+
+      margin-bottom: 8px;
+    }
+
+    form {
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      max-width: 600px;
+
+      outline: none;
+      border: none;
+
+      input {
+        width: 600px;
+
+        font-size: 1em;
+        font-family: "Pixel-2";
+
+        padding: 1em;
+
+        margin-bottom: 0.5em;
+
+        border-radius: 5px;
+
+        outline: none;
+        border: none;
+
+        background-color: #011224;
+
+        color: #50e5ed;
+        &::placeholder {
+          color: #05234e;
+          text-shadow: none;
+        }
+      }
+
+      textarea {
+        width: 600px;
+
+        font-size: 1em;
+        font-family: "Pixel-2";
+
+        padding: 1em;
+
+        height: 250px;
+
+        border-radius: 5px;
+
+        outline: none;
+        border: none;
+
+        background-color: #011224;
+
+        color: #50e4ed;
+
+        resize: none;
+        &::placeholder {
+          color: #05234e;
+          text-shadow: none;
+        }
+      }
+
+      button {
+        font-family: "Pixel";
+        font-weight: 500;
+        font-size: 1.25em;
+
+        outline: none;
+        border: none;
+
+        margin-top: 10px;
+
+        width: 20%;
+
+        background-color: transparent;
+
+        border: 2px solid #fff;
+
+        color: #fff;
+
+        padding: 0.4em 0;
+
+        text-shadow: 1px 2px 0px rgb(255 255 255 / 45%);
+
+        &:hover {
+          color: #50e4ed;
+
+          border: 2px solid #50e4ed;
+
+          text-shadow: 1px 2px 0px rgb(80 229 237 / 45%);
+
+          transition: 0.25s ease-in-out;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .Contact {
+    article {
+      h1 {
+        font-size: 2.8em;
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .Contact {
+    article {
+      form {
+        input {
+          width: 500px;
+        }
+
+        textarea {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .Contact {
+    article {
+      form {
+        input {
+          width: 400px;
+        }
+
+        textarea {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .Contact {
+    article {
+      form {
+        input {
+          width: 350px;
+        }
+
+        textarea {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
