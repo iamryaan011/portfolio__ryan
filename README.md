@@ -18,4 +18,4 @@ yarn dev
 ```
 
 ### Host in Vercel
-<a href='https://portfolio-ryan-gamma.vercel.app/'>Site in vercel domain</a>
+<a href='https://portfolio-ryan-gamma.vercel.app/'>Website in vercel domain</a>
